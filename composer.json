@@ -1,0 +1,22 @@
+{
+    "name": "wemessage/module-akismet-magento2",
+    "description": "Wil validate contact form submision for spam using Akismet service",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Wemessage",
+            "email": "naberd@wemessage.nl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Wemessage\\Akismet\\": ""
+        }
+    }
+}
