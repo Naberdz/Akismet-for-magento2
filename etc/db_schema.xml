@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="wemessage_akismet_log" resource="default" engine="innodb" comment="wemessage_akismet_log Table">
+		<column xsi:type="int" name="akismet_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity Id"/>
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="akismet_id"/>
+		</constraint>
+		<column name="name" nullable="true" xsi:type="text" comment="name"/>
+		<column name="email" nullable="true" xsi:type="text" comment="email"/>
+		<column name="ip" nullable="true" xsi:type="text" comment="ip"/>
+		<column name="user_agent" nullable="true" xsi:type="text" comment="user_agent"/>
+		<column name="comment" nullable="true" xsi:type="text" comment="comment"/>
+		<column name="is_spam" nullable="true" xsi:type="text" comment="is_spam"/>
+		<column name="created_at" nullable="true" xsi:type="text" comment="created_at"/>
+	</table>
+</schema>

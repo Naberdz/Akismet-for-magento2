@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+		<add id="Wemessage::top_level" title="Wemessage" module="Wemessage_Akismet" sortOrder="999" resource="Magento_Backend::content"/>
+		<add id="Wemessage_Akismet::wemessage_akismet_akismet" title="Akismet" module="Wemessage_Akismet" sortOrder="9999" resource="Magento_Backend::content" parent="Wemessage::top_level" action="wemessage_akismet/akismet/index"/>
+	</menu>
+</config>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<!-- Akismet Menu + Spamlog View -->
+                <resource id="Wemessage_Akismet::akismet_root" title="Akismet" sortOrder="1000">
+                    <resource id="Wemessage_Akismet::spamlog" title="Spam Log"/>
+                </resource>
+
+                <!-- Akismet Config access under Stores > Configuration -->
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Wemessage_Akismet::config_wemessage_akismet" title="Akismet Configuration"/>
+                        </resource>
+                    </resource>
+                </resource>
+			</resource>
+		</resources>
+	</acl>
+</config>
